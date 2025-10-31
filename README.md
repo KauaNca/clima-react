@@ -30,6 +30,23 @@ O aplicativo permite consultar **condições climáticas atuais** e **previsões
 ✅ Design moderno com tema escuro/claro *(opcional)*  
 
 ---
+📝 Notas de Desenvolvimento
+Este projeto foi idealizado para:
+
+Praticar conceitos de React moderno (Hooks, Context API)
+
+Explorar a integração entre Ant Design e Tailwind CSS
+
+Implementar consumo de APIs externas
+
+Desenvolver interfaces responsivas e acessíveis
+
+👨‍💻 Autor
+Desenvolvido como projeto de estudo e aprimoramento de habilidades em desenvolvimento front-end.
+
+Projeto em desenvolvimento contínuo 🚀
+
+---
 
 ## 📦 Instalação
 
@@ -46,19 +63,3 @@ npm install
 # Execute o projeto
 npm run dev
 
-
-📝 Notas de Desenvolvimento
-Este projeto foi idealizado para:
-
-Praticar conceitos de React moderno (Hooks, Context API)
-
-Explorar a integração entre Ant Design e Tailwind CSS
-
-Implementar consumo de APIs externas
-
-Desenvolver interfaces responsivas e acessíveis
-
-👨‍💻 Autor
-Desenvolvido como projeto de estudo e aprimoramento de habilidades em desenvolvimento front-end.
-
-Projeto em desenvolvimento contínuo 🚀
