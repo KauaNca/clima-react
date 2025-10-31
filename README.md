@@ -1,36 +1,39 @@
-🌤️ Projeto de Clima
+# 🌤️ Projeto de Clima
 
-Um aplicativo de previsão do tempo desenvolvido em React com interface moderna e responsiva.
+Um aplicativo de previsão do tempo desenvolvido em **React** com interface moderna e responsiva.
 
-📋 Descrição
+---
 
-Este projeto foi criado para aplicar e testar conhecimentos em desenvolvimento front-end, utilizando uma stack moderna com React, Ant Design e Tailwind CSS. O aplicativo permite consultar condições climáticas atuais e previsões para diferentes localidades.
+## 📋 Descrição
 
-🚀 Tecnologias Utilizadas
+Este projeto foi criado para aplicar e testar conhecimentos em desenvolvimento **front-end**, utilizando uma stack moderna com **React**, **Ant Design** e **Tailwind CSS**.  
+O aplicativo permite consultar **condições climáticas atuais** e **previsões para diferentes localidades**.
 
-React 19.1.1 - Biblioteca JavaScript para construção de interfaces
+---
 
-Ant Design 5.27.6 - UI library com componentes elegantes e profissionais
+## 🚀 Tecnologias Utilizadas
 
-Tailwind CSS 4.1.16 - Framework CSS utilitário para design responsivo
+- **React 19.1.1** – Biblioteca JavaScript para construção de interfaces.  
+- **Ant Design 5.27.6** – UI library com componentes elegantes e profissionais.  
+- **Tailwind CSS 4.1.16** – Framework CSS utilitário para design responsivo.  
+- **@tailwindcss/vite 4.1.16** – Integração do Tailwind com Vite.  
 
-@tailwindcss/vite 4.1.16 - Integração do Tailwind com Vite
+---
 
-🛠️ Funcionalidades
-✅ Consulta de clima atual por cidade
+## 🛠️ Funcionalidades
 
-✅ Exibição de temperatura, umidade, velocidade do vento
+✅ Consulta de clima atual por cidade  
+✅ Exibição de temperatura, umidade e velocidade do vento  
+✅ Interface responsiva e adaptável  
+✅ Ícones representando condições climáticas  
+✅ Busca por localização  
+✅ Design moderno com tema escuro/claro *(opcional)*  
 
-✅ Interface responsiva e adaptável
+---
 
-✅ Ícones representando condições climáticas
+## 📦 Instalação
 
-✅ Busca por localização
-
-✅ Design moderno com tema escuro/claro (opcional)
-
-📦 Instalação
-
+```bash
 # Clone o repositório
 git clone <url-do-repositorio>
 
@@ -42,6 +45,7 @@ npm install
 
 # Execute o projeto
 npm run dev
+
 
 📝 Notas de Desenvolvimento
 Este projeto foi idealizado para:
