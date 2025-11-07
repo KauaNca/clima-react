@@ -1,15 +1,22 @@
 import { useRef, useState } from "react";
 import InputClima from "./components/Input.jsx";
 import Botao from "./components/Button.jsx";
+import Alerta from "./components/Alert.jsx";
 
 function App() {
   const [dados, setDados] = useState(null);
+  const [alerta, setAlerta] = useState(null);
 
+  //funcão para quando clicar no botão
   async function handleClick() {
-    let cidade = inputRef.current.input.value;
+    let cidade = inputRef.current.input.value; //devido ser um componente personalizado, é necessário acessar o valor assim
     cidade = cidade.trim();
     if (!cidade) {
-      alert("Por favor, insira o nome de uma cidade.");
+      setAlerta({
+        mensagem: "Por favor, insira o nome de uma cidade.",
+        tipo: "warning",
+      });
+      setDados(null);
       return;
     }
 
@@ -21,7 +28,10 @@ function App() {
     const data = await response.json();
 
     if (data.cod !== 200) {
-      alert("Cidade não encontrada. Por favor, tente novamente.");
+      setAlerta({
+        mensagem: "Cidade não encontrada. Por favor, tente novamente.",
+        tipo: "error",
+      });
       setDados(null);
       return;
     }
@@ -30,7 +40,7 @@ function App() {
     console.log(data);
   }
 
-  const inputRef = useRef(null);
+  const inputRef = useRef(null); //referência para o input
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-b from-blue-100 to-blue-200">
@@ -43,7 +53,7 @@ function App() {
         </span>
 
         <div className="flex items-center justify-center gap-3 w-full mb-8">
-          <InputClima inputRef={inputRef} />
+          <InputClima inputRef={inputRef} onPressEnter={handleClick} />
           <Botao onClick={handleClick} />
         </div>
 
@@ -72,6 +82,13 @@ function App() {
                 {Math.round(dados.main.temp)}°C
               </p>
             </div>
+          )}
+          {alerta != null && (
+            <Alerta
+              message={alerta.mensagem}
+              type={alerta.tipo}
+              onClose={() => setTimeout(() => setAlerta(null), 4000)}
+            />
           )}
         </div>
       </div>
