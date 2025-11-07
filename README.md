@@ -3,7 +3,12 @@
 Um aplicativo de previsão do tempo desenvolvido em **React** com interface moderna e responsiva.
 
 ---
+# 🌐 Acesso à Versão Web
 
+Acesse por meio do seguinte link:  
+🔗 [clima-react](https://kauanca.github.io/clima-react/)
+
+---
 ## 📋 Descrição
 
 Este projeto foi criado para aplicar e testar conhecimentos em desenvolvimento **front-end**, utilizando uma stack moderna com **React**, **Ant Design** e **Tailwind CSS**.  
@@ -27,7 +32,6 @@ O aplicativo permite consultar **condições climáticas atuais** e **previsões
 ✅ Interface responsiva e adaptável  
 ✅ Ícones representando condições climáticas  
 ✅ Busca por localização  
-✅ Design moderno com tema escuro/claro *(opcional)*  
 
 ---
 📝 Notas de Desenvolvimento
